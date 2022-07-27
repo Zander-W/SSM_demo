@@ -23,5 +23,13 @@
         <!--后缀-->
         <property name="suffix" value=".jsp"/>
     </bean>
+
+    <!--配置静态资源映射-->
+    <!--* 表示任意文件 **表示任意子文件-->
+    <mvc:resources mapping="/library/api/**" location="WEB-INF/api/"/>
+    <mvc:resources mapping="/library/css/**" location="WEB-INF/css/"/>
+    <mvc:resources mapping="/library/images/**" location="WEB-INF/images/"/>
+    <mvc:resources mapping="/library/js/**" location="WEB-INF/js/"/>
+    <mvc:resources mapping="/library/lib/**" location="WEB-INF/lib/"/>
 </beans>
 
